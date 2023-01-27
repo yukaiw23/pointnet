@@ -2,9 +2,10 @@
 Pointnet(++) by pytoch in Python
 
 # Data
+PS:The training data is already in repository folder, but can also be downloaded from online.
 1. Download https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip 'modelnet40'.
 2. Save under the folder 'data'. 
-3. DOwnload https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip 'shapenet'. 
+3. Download https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip 'shapenet'. 
 
 # Training
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
