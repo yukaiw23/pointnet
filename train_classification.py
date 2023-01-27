@@ -1,7 +1,4 @@
-"""
-Author: Benny
-Date: Nov 2019
-"""
+
 
 import os
 import sys
