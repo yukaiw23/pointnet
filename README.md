@@ -8,6 +8,10 @@ PS:The training data is already in repository folder, but can also be downloaded
 3. Download https://shapenet.cs.stanford.edu/media/shapenetcore_partanno_segmentation_benchmark_v0_normal.zip 'shapenet'. 
 4. Save under the folder 'data'
 
+14/02/2023
+
+Cloud point has been partially cut in half. PLease use the new data folder : "modelnet40_normal_halfsemi" in trainning and testing.
+
 # Training
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
 
