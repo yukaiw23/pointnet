@@ -18,12 +18,12 @@ After downloading the dataset, directing the terminal to the working path, then 
 Run the following for object classification task:
 
 ```
-python train_classification.py --model pointnet2_cls_msg --use_normal --log_dir pointnet2_cls_msg --batch_size 16
+python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --batch_size 16
 ```
 
 Or run the following for part segmentation task:
 ```
-python train_partseg.py --model pointnet2_part_seg_msg --use_normal --log_dir pointnet2_part_seg_msg
+python train_partseg.py --model pointnet2_part_seg_msg --log_dir pointnet2_part_seg_msg
 ```
  
 
