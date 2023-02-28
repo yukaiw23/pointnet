@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb 14 01:22:26 2023
+
+Partially and randomly delete section of point cloud. If the resulted file is empty, copy the oringinal files. 
+
+@author: wyk
+""" 
+import os
+# import glob
+import shutil
+
+directory = 'modelnet40_normal_resampled_original/xbox/' #where the original files are
+
+
+for filename in os.listdir(directory): # list all files in directory
+    
+    my_file = open('modelnet40_normal_resampled_original/xbox/'+filename,'r') # open and read all files in directory
+
+
+    data = my_file.read()
+    data = list(data.split("\n"))
+    data = [item.split(',') for item in data]
+    data = data[:-1]
+
+    file = open('modelnet40_0228/xbox/'+filename,'w') # create new file in new location, and process the following.
+
+    for i in range(len(data)-1):
+    
+        if float(data[i][2]) > 0: # if z is > 0
+        
+        
+            file.writelines(data[i][0]+","+data[i][1]+","+data[i][2]+","+data[i][3]+","+ data[i][4]+","+data[i][5])
+            file.write("\n")
+        
+        elif float(data[i][1]) == 0:
+           
+        
+            file.writelines(data[i][0]+","+data[i][1]+","+data[i][2]+","+data[i][3]+","+ data[i][4]+","+data[i][5])
+            file.write("\n")
+            
+    file.close()
+        
+
+    ''' calculate how many lines in new file '''
+    
+    newfile = open('modelnet40_0228/xbox/'+filename,'r')
+    counter = 0
+    lines = newfile.read()
+    colist = lines.split("\n")
+    # colist = colist[:-1] # delete the last empty item
+    
+    if len(colist)<1025:
+            print(filename)
+            shutil.copyfile('modelnet40_normal_resampled_original/xbox/'+filename,'modelnet40_0228/xbox/'+filename ) 
+
+
+    
+    '''check if anypoints missing in one line'''
+       
+    for i in range(len(colist)-1):
+        
+        item = colist[i].split(',')   
+        if len(item) != 6:
+            print(i ,item)
+     
+        
+        
+    
+    
+    
