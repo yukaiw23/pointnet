@@ -13,7 +13,11 @@ PS:The training data is already in repository folder, but can also be downloaded
 
 Cloud point has been partially cut in half. PLease use the new data folder : "modelnet40_normal_halfsemi" in trainning and testing.
 
+28/02/2023
+
+Cloud point has been updated, with URL : https://www.dropbox.com/s/2dn3tqpip7i7hxw/modelnet40_0228.zip?dl=0, named modenet40_0228
 # Training
+
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
 
 Run the following for object classification task:
@@ -45,3 +49,5 @@ python test_partseg.py --use_normal --log_dir pointnet2_part_seg_msg
 
 The testing log and result will be saved under '/log' folder
 
+05/03/2023
+The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy=90.3871%, Class accuracy=88.1154%
