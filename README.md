@@ -50,4 +50,5 @@ python test_partseg.py --use_normal --log_dir pointnet2_part_seg_msg
 The testing log and result will be saved under '/log' folder
 
 05/03/2023
-The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy=90.3871%, Class accuracy=88.1154%
+
+The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy = 90.3871%, Class accuracy = 88.1154%
