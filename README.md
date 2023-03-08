@@ -52,3 +52,4 @@ The testing log and result will be saved under '/log' folder
 05/03/2023
 
 The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy = 90.3871%, Class accuracy = 88.1154%
+(https://user-images.githubusercontent.com/114976583/223767994-8b333915-01a8-4a5c-9aca-338eeeca0f0e.png)
