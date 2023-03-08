@@ -56,8 +56,5 @@ The model has been trained based on new dataset 'modelnet40_0228', and its test 
 The testing demonstration is as below:
 
  
-Click the following link to interact with pointcloud data:
-
-file:///home/wyk/Point++/Pointnet_Pointnet2_pytorch/data/test.html
 
 ![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png)
