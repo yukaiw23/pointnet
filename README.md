@@ -67,19 +67,16 @@ In order to test robustness of Pointnet++ and the performance of applying it in 
 
 The calculation of center of mass of pointcloud is based on following equations: 
 
-![image](https://user-images.githubusercontent.com/114976583/230172632-3dac7e2d-68fd-4055-b69e-bc2301fd2eda.png)    
-![image](https://user-images.githubusercontent.com/114976583/230172923-85caf8e9-0d2f-4482-86c4-968f75d88bbe.png)
+![image](https://user-images.githubusercontent.com/114976583/230172632-3dac7e2d-68fd-4055-b69e-bc2301fd2eda.png) | ![image](https://user-images.githubusercontent.com/114976583/230172923-85caf8e9-0d2f-4482-86c4-968f75d88bbe.png)
 
 where xi, yi, zi are three coordinates of each point within the pointcloud, and M, n are total number of points within the pointcloud
 
 Examples of modifying pointcloud of 'airplane' are shown below: 
-1. One quarter of the pointcloud is removed: 
+ One quarter / Half of the pointcloud is removed: 
 
 <img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
-2. Half of the pointcloud is removed:
 
-<img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
 3. Three quarters of the pointcloud is removed:
 
