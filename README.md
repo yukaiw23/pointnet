@@ -67,9 +67,9 @@ In order to test robustness of Pointnet++ and the performance of applying it in 
 
 The calculation of center of mass of pointcloud is based on following equations: 
 <p align="center">
-  <img src = "https://user-images.githubusercontent.com/114976583/230172632-3dac7e2d-68fd-4055-b69e-bc2301fd2eda.png"> 
-                                                                                                               <image src = "https://user-images.githubusercontent.com/114976583/230172923-85caf8e9-0d2f-4482-86c4-   968f75d88bbe.png">
-</p>
+  <img src = "https://user-images.githubusercontent.com/114976583/230172632-3dac7e2d-68fd-4055-b69e- bc2301fd2eda.png"> 
+</p>                                                                                                               <image src = "https://user-images.githubusercontent.com/114976583/230172923-85caf8e9-0d2f-4482-86c4-   968f75d88bbe.png">
+
 where xi, yi, zi are three coordinates of each point within the pointcloud, and M, n are total number of points within the pointcloud
 
 Examples of modifying pointcloud of 'airplane' are shown below: 
