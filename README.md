@@ -74,6 +74,7 @@ Examples of modifying pointcloud of 'airplane' are shown below:
 
 3. Three quarters of the pointcloud is removed:
 
-<img scr = "https://user-images.githubusercontent.com/114976583/230169709-79909c8e-72d8-4de8-93ce-73822b012124.png" width="400" height="400">
+<img scr = "https://user-images.githubusercontent.com/114976583/230171098-d551fdff-b41e-4a6e-a2a9-cf4cd19571e6.png" width="400" height="400">
+
 
 
