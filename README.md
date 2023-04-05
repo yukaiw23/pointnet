@@ -62,3 +62,18 @@ The testing demonstration is as below:
 
 # Data Manipulation
 In order to test robustness of Pointnet++ and the performance of applying it in unexpected and more complex situation, the training data has been modified. One quarter, half and three quarters of the original data are removed with respect to center of mass of each pointcloud
+
+Examples of modifying pointcloud of 'airplane' are shown below: 
+1. One quarter of the pointcloud is removed: 
+
+![image](https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png)
+
+2. Half of the pointcloud is removed:
+
+![image](https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png)
+
+3. Three quarters of the pointcloud is removed:
+
+![image](https://user-images.githubusercontent.com/114976583/230169709-79909c8e-72d8-4de8-93ce-73822b012124.png)
+
+
