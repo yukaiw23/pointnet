@@ -68,10 +68,10 @@ In order to test robustness of Pointnet++ and the performance of applying it in 
 The calculation of center of mass of pointcloud is based on following equations: 
 <p align="center">
    <img src = "https://user-images.githubusercontent.com/114976583/230176228-026453ed-4eb3-4c84-9cf0-6d8794553d97.png"> 
-</p>   
+ 
 
 
-<p align="center">
+
    <image src = "https://user-images.githubusercontent.com/114976583/230176365-756d54de-b066-4fd0-b014-4c26fc1ec1bc.png">
 </p>
 
