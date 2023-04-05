@@ -75,11 +75,11 @@ where xi, yi, zi are three coordinates of each point within the pointcloud, and 
 Examples of modifying pointcloud of 'airplane' are shown below: 
 1. One quarter of the pointcloud is removed: 
 
-<img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350">  <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
+<img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
 2. Half of the pointcloud is removed:
 
-
+<img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
 3. Three quarters of the pointcloud is removed:
 
