@@ -66,7 +66,7 @@ The testing demonstration is as below:
 In order to test robustness of Pointnet++ and the performance of applying it in unexpected and more complex situation, the training data has been modified. One quarter, half and three quarters of the original data are removed with respect to center of mass of each pointcloud
 
 The calculation of center of mass of pointcloud is based on following equations: 
-
+<p align="center">
 ![image](https://user-images.githubusercontent.com/114976583/230172632-3dac7e2d-68fd-4055-b69e-bc2301fd2eda.png) | ![image](https://user-images.githubusercontent.com/114976583/230172923-85caf8e9-0d2f-4482-86c4-968f75d88bbe.png)
 
 where xi, yi, zi are three coordinates of each point within the pointcloud, and M, n are total number of points within the pointcloud
