@@ -66,7 +66,7 @@ In order to test robustness of Pointnet++ and the performance of applying it in 
 Examples of modifying pointcloud of 'airplane' are shown below: 
 1. One quarter of the pointcloud is removed: 
 
-![image](https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png)
+![image](https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png =250x250)
 
 2. Half of the pointcloud is removed:
 
