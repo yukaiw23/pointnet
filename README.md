@@ -18,6 +18,7 @@ Cloud point has been partially cut in half. PLease use the new data folder : "mo
 Cloud point has been updated, with URL : https://www.dropbox.com/s/2dn3tqpip7i7hxw/modelnet40_0228.zip?dl=0, named modenet40_0228
 # Training
 
+06/04/2023: 
 Note: change data loader directory in 'ModelNetDataLoader.py' line 146, 'train_classification' line 118.
 
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
