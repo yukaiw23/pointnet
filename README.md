@@ -71,9 +71,9 @@ The testing demonstration is as below:
 15/05/2023
 
 The data has been updated since 12/04/2023, the new testing result is shown below: 
-| Data | Test Accuracy |
-|-----| -------- |
-|Half | 86.3517|
+| Data | Test Instance Accuracy | Class Accuracy |
+|-----| -------- | -------|
+|Half | 90.3722|86.3517| 
 
 # Data Manipulation
 In order to test robustness of Pointnet++ and the performance of applying it in unexpected and more complex situation, the training data has been modified. One quarter, half and three quarters of the original data are removed with respect to center of mass of each pointcloud
