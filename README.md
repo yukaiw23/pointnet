@@ -56,7 +56,7 @@ python test_partseg.py --use_normal --log_dir pointnet2_part_seg_msg
 
 The testing log and result will be saved under '/log' folder
 
-05/03/2023
+03/05/2023
 
 The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy = 90.3871%, Class accuracy = 88.1154%
 
@@ -68,6 +68,12 @@ The testing demonstration is as below:
 
 
 
+15/05/2023
+
+The data has been updated since 12/04/2023, the new testing result is shown below: 
+| Data | Test Accuracy |
+|-----| -------- |
+|Half | 86.3517|
 
 # Data Manipulation
 In order to test robustness of Pointnet++ and the performance of applying it in unexpected and more complex situation, the training data has been modified. One quarter, half and three quarters of the original data are removed with respect to center of mass of each pointcloud
