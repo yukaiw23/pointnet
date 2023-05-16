@@ -16,6 +16,10 @@ Cloud point has been partially cut in half. PLease use the new data folder : "mo
 28/02/2023
 
 Cloud point has been updated, with URL : https://www.dropbox.com/s/2dn3tqpip7i7hxw/modelnet40_0228.zip?dl=0, named modenet40_0228
+
+12/04/2023
+
+Cloud point has been segmented into 'half', 'quarter' and 'three quarters' based on its principle axis. The new URL can be found as : https://www.dropbox.com/scl/fo/06oak7qahlup5cupgkjb8/h?dl=0&rlkey=790vt8urzt5debutles496qk8
 # Training
 
 06/04/2023: 
