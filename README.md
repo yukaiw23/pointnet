@@ -24,6 +24,7 @@ Cloud point has been segmented into 'half', 'quarter' and 'three quarters' based
 # Training
 
 22/06/2023: 
+
 New committed files needed to be downloaded: 'pointnet2_cls_ssg.py', 'pointnet2_cls_msg.py', 'pointnet2_utils.py', 'residualMLP.py', and 'train_classification.py', 'ModelNetDaraLoader.py'.
 
 Note:## change the data loader directory in both 'ModelNetDataLoader.py' line 146, 'train_classification.py' line 118.
@@ -32,6 +33,7 @@ Note:## change the data loader directory in both 'ModelNetDataLoader.py' line 14
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
 
 15/05/2023
+
 Note: ## Besides hyperparameters of Pointnet++, settings for BottleNeck Residual / Inverted Residual MLP needed to be tuned. 
 Settings can be done under Class 'BottleNeck', and 'ResidualAdd' in file 'Pointnet2_utils.py'
 
