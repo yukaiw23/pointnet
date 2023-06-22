@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun 18 21:41:58 2023
+
+@author: wyk
+"""
+
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+
+
+class channelNet(nn.Module):
+
+    def __init__(self, input_channels, out_channels, kernel_size=1):
+        super(channelNet,self).__init__()
+        self.net = nn.Sequential(
+            nn.Conv1d(input_channels, out_channels, kernel_size),
+            nn.BatchNorm1d(out_channels),
+            )
+
+    def forward(self, x):
+         
+        Y=F.relu(self.net(x))       # Not redisual, input can not equal output
+        # Y=F.relu(self.net(x)+x)   # Residual, input=output
+        
+        return Y
+            
+
+blk1 = channelNet(1024,512)   
+
+# X1 = torch.rand(4, 512, 9)
+# Y1 = blk1(X1)
+# print(Y1.shape)
+
+
+def transform_channel(points):
+    ''' input points dimension = 3'''
+    # points = torch.rand(4,1024,3)
+    x_index = torch.sort(points,1)[1][:,:,0]
+    y_index = torch.sort(points,1)[1][:,:,1]
+    z_index = torch.sort(points,1)[1][:,:,2]
+
+    i = 0
+    outx = []
+    outy = []
+    outz = []
+    while i < points.shape[0]:
+    
+        x_data = points[i][x_index[i]]
+        y_data = points[i][y_index[i]]
+        z_data = points[i][z_index[i]]
+    
+        outx.append(x_data)
+        outy.append(y_data)
+        outz.append(z_data)
+    
+        i=i+1
+    
+    outx=torch.stack(outx,0)   
+    outy=torch.stack(outy,0)
+    outz=torch.stack(outz,0)
+    
+    new_points = torch.cat((outx,outy,outz),2)
+
+    return new_points
+
+points = torch.rand(4,1024,3)
+Y = blk1(transform_channel(points))
