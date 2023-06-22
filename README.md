@@ -96,3 +96,5 @@ One quarter / Half /Three quarters of the pointcloud is removed:
 
 </p>
 
+# Network Architecture
+Set Abstraction --> BottleNeck Residual / Inverted Residual MLP --> MaxPooling 
