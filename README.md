@@ -29,7 +29,9 @@ Note:## change the data loader directory in both 'ModelNetDataLoader.py' line 14
 
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
 
-Besides hyperparameters of Pointnet++, settings for BottleNeck Residual / Inverted Residual MLP needed to be tuned. Settings can be done under CLass 'BottleNeck', and 'ResidualAdd' in file 'Pointnet2_utils.py'
+15/05/2023
+Note: ## Besides hyperparameters of Pointnet++, settings for BottleNeck Residual / Inverted Residual MLP needed to be tuned. 
+Settings can be done under Class 'BottleNeck', and 'ResidualAdd' in file 'Pointnet2_utils.py'
 
 Run the following for the object classification task:
 
@@ -75,9 +77,9 @@ The data has been updated since 12/04/2023, the new testing result is shown belo
 | Three Quarters | 88.7136 | 85.4157 |
 
 # Data Manipulation
-In order to test robustness of Pointnet++ and the performance of applying it in unexpected and more complex situation, the training data has been modified. One quarter, half and three quarters of the original data are removed with respect to center of mass of each pointcloud
+In order to test the robustness of Pointnet++ and the performance of applying it in unexpected and more complex situations, the training data has been modified. One-quarter, half, and three-quarters of the original data are removed with respect to the center of mass of each point cloud
 
-The calculation of center of mass of pointcloud is based on following equations: 
+The calculation of the center of mass of point cloud is based on the following equations: 
 <p align="center">
    <img src = "https://user-images.githubusercontent.com/114976583/230176228-026453ed-4eb3-4c84-9cf0-6d8794553d97.png"> 
  
@@ -88,10 +90,10 @@ The calculation of center of mass of pointcloud is based on following equations:
 </p>
 
  
-where xi, yi, zi are three coordinates of each point within the pointcloud, and M, n are total number of points within the pointcloud
+where xi, yi, zi are three coordinates of each point within the point cloud, and M, n are a total number of points within the point cloud
 
 Examples of modifying pointcloud of 'airplane' are shown below: 
-One quarter / Half /Three quarters of the pointcloud is removed: 
+One quarter / Half /Three-quarters of the point cloud is removed: 
 <p align="center">
   <img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
