@@ -20,14 +20,18 @@ Cloud point has been updated, with URL : https://www.dropbox.com/s/2dn3tqpip7i7h
 12/04/2023
 
 Cloud point has been segmented into 'half', 'quarter' and 'three quarters' based on its principle axis. The new URL can be found as : https://www.dropbox.com/scl/fo/06oak7qahlup5cupgkjb8/h?dl=0&rlkey=790vt8urzt5debutles496qk8
+
 # Training
 
-06/04/2023: 
-Note: change data loader directory in 'ModelNetDataLoader.py' line 146, 'train_classification' line 118.
+22/06/2023: 
+Note:## change the data loader directory in both 'ModelNetDataLoader.py' line 146, 'train_classification' line 118.
+
 
 After downloading the dataset, directing the terminal to the working path, then activating the Pytorch environment. 
 
-Run the following for object classification task:
+Besides hyperparameters of Pointnet++, settings for BottleNeck Residual / Inverted Residual MLP needed to be tuned. Settings can be done under CLass 'BottleNeck', and 'ResidualAdd' in file 'Pointnet2_utils.py'
+
+Run the following for the object classification task:
 
 ```
 python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --batch_size 16
