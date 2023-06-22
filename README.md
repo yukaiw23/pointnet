@@ -31,27 +31,20 @@ Run the following for object classification task:
 
 ```
 python train_classification.py --model pointnet2_cls_msg --log_dir pointnet2_cls_msg --batch_size 16
+
+python train_classification.py --model pointnet2_cls_ssg --log_dir pointnet2_cls_ssg --batch_size 16
 ```
 
-Or run the following for part segmentation task:
-```
-python train_partseg.py --model pointnet2_part_seg_msg --log_dir pointnet2_part_seg_msg
-```
  
 
 The training log and result will be saved under '/log' folder
 
 # Testing
-Run the following for object classification taske:
+Run the following for object classification task:
 ```
 python test_classification.py --use_normal --log_dir pointnet2_cls_msg
 ``` 
-
-
-Or run the following for part segentation:
-```
-python test_partseg.py --use_normal --log_dir pointnet2_part_seg_msg
-``` 
+ 
 
 
 The testing log and result will be saved under '/log' folder
