@@ -74,12 +74,37 @@ The testing demonstration is as below:
 
 15/05/2023
 
-The data has been updated since 12/04/2023, the new testing result is shown below: 
+The data has been updated since 12/04/2023, 
+
+The new testing result is as follows: 
+| Data | Train Instance Accuracy | Class Accuracy |
+|-----| -------- | -------|
+| Half | 94.8943 | 88.1758 | 
+| Quarter | 95.4776 | 88.9748 |
+| Three Quarters | 95.5589 | 86.7185 |
+
+The new testing result is shown below: 
 | Data | Test Instance Accuracy | Class Accuracy |
 |-----| -------- | -------|
 | Half | 90.3722 | 86.3517 | 
 | Quarter | 92.3544 | 88.94 |
 | Three Quarters | 88.7136 | 85.4157 |
+
+
+30/06/2023
+With new residual MLP added to the network, the training result is as follows: 
+| Data | Train Instance Accuracy | Class Accuracy |
+|-----| -------- | -------|
+| Half | 95.9756 | 88.5275 | 
+| Quarter | 95.5746 | 88.9906 |
+| Three Quarters | 95.8943 | 86.4053 |
+
+The testing result is shown below:
+| Data | Test Instance Accuracy | Class Accuracy |
+|-----| -------- | -------|
+| Half |  |  | 
+| Quarter |  |  |
+| Three Quarters |  |  |
 
 # Data Manipulation
 In order to test the robustness of Pointnet++ and the performance of applying it in unexpected and more complex situations, the training data has been modified. One-quarter, half, and three-quarters of the original data are removed with respect to the center of mass of each point cloud
