@@ -140,7 +140,8 @@ One quarter / Half /Three-quarters of the point cloud is removed:
   <img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350">
 
 
-  <img src = "https://user-images.githubusercontent.com/114976583/230171098-d551fdff-b41e-4a6e-a2a9-cf4cd19571e6.png" width="350" height="350">
+  <img src = "https://user-images.githubusercontent.com/114976583/230171098-d551fdff-b41e-4a6e-a2a9-cf4cd19571e6.png" width="350" height="350"> | ![image](https://github.com/yukaiw23/pointnet/assets/114976583/034ef693-19b1-4152-a4ce-e5ac57e92674)
+
 
 </p>
 
