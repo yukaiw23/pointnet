@@ -59,6 +59,7 @@ The training log and result will be saved under '/log' folder
 # Testing
 
 Official record:
+
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/e87aa765-7b0b-45eb-8191-31a413672620)
 
 
