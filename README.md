@@ -1,9 +1,11 @@
 # Pointnet
 Pointnet(++) by pytoch in Python
+## 05/07/2023
 
-### 22/06/2023: 
+### 05/07/2023: 
 
 New committed files needed to be downloaded: 'pointnet2_cls_ssg.py', 'pointnet2_cls_msg.py', 'pointnet2_utils.py', 'residualMLP.py', and 'train_classification.py','ModelNetDaraLoader.py'.
+In 'train_classification.py', make sure line 129, 130, 131 have the same name as the new files you downloaded and saved above. 
 
 Note:## change the data loader directory in both 'ModelNetDataLoader.py' line 146, 'train_classification.py' line 118.
 
