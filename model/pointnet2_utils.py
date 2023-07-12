@@ -478,7 +478,7 @@ class BottleNeck(nn.Sequential):
                     if in_features != out_features
                     else None,
                 ),
-                nn.ReLU(),
+                #nn.ReLU(),
             )
         )
     
