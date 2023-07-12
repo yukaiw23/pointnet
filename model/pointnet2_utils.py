@@ -434,8 +434,7 @@ class ConvNormAct(nn.Sequential):
             act(),
         )
 
-Conv1X1BnReLU = partial(ConvNormAct, kernel_size=1)
-Conv3X3BnReLU = partial(ConvNormAct, kernel_size=3)     
+   
         
 class ResidualAdd(nn.Module):
     def __init__(self, block: nn.Module, shortcut: Optional[nn.Module] = None):
@@ -450,7 +449,9 @@ class ResidualAdd(nn.Module):
             res = self.shortcut(res)
         x += res
         return x
-    
+Conv1X1BnReLU = partial(ConvNormAct, kernel_size=1)
+Conv3X3BnReLU = partial(ConvNormAct, kernel_size=3)  
+
 class BottleNeck(nn.Sequential):
     def __init__(self, in_features: int, out_features: int, coeff: int = 2):
         reduced_features = out_features // coeff
@@ -460,11 +461,18 @@ class BottleNeck(nn.Sequential):
                 ResidualAdd(
                     nn.Sequential(
                         # wide -> narrow
-                        Conv1X1BnReLU(in_features, reduced_features),
+                        #Conv1X1BnReLU(in_features, reduced_features),
                         # narrow -> narrow
-                        Conv3X3BnReLU(reduced_features, reduced_features),
+                        #Conv3X3BnReLU(reduced_features, reduced_features),
                         # narrow -> wide
-                        Conv1X1BnReLU(reduced_features, out_features, act=nn.Identity),
+                        #Conv1X1BnReLU(reduced_features, out_features, act=nn.Identity),
+                        
+                        Conv3X3BnReLU(in_features, in_features),
+                        
+                        Conv1X1BnReLU(in_features, reduced_features),
+                        Conv1X1BnReLU(reduced_features, out_features),
+                        
+                        Conv3X3BnReLU(out_features, out_features, act=nn.Identity),
                     ),
                     shortcut=Conv1X1BnReLU(in_features, out_features)
                     if in_features != out_features
