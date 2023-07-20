@@ -82,7 +82,7 @@ The testing demonstration is as below:
 
  
 
-![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png) 
+![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png) width="150" height="150"
 
 
 
@@ -125,34 +125,46 @@ In order to test the robustness of Pointnet++ and the performance of applying it
 
 The calculation of the center of mass of point cloud is based on the following equations: 
 <p align="center">
-   <img src = "https://user-images.githubusercontent.com/114976583/230176228-026453ed-4eb3-4c84-9cf0-6d8794553d97.png"> 
  
-
-
+   <img src = "https://user-images.githubusercontent.com/114976583/230176228-026453ed-4eb3-4c84-9cf0-6d8794553d97.png">
+ 
+</p>
+<p align="center">
 
    <image src = "https://user-images.githubusercontent.com/114976583/230176365-756d54de-b066-4fd0-b014-4c26fc1ec1bc.png">
+
 </p>
 
  
 where xi, yi, zi are three coordinates of each point within the point cloud, and M, n are a total number of points within the point cloud
 
-Examples of modifying pointcloud of 'airplane' are shown below: 
-One quarter / Half /Three-quarters of the point cloud is removed: 
-<p align="center">
-  <img src = "https://user-images.githubusercontent.com/114976583/230169282-517eed79-8e81-46b1-b23d-2a0a5284b747.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230169509-bb729cd7-ee94-4fa9-8564-f245c5ca3c87.png" width="350" height="350"> | <img src = "https://user-images.githubusercontent.com/114976583/230171098-d551fdff-b41e-4a6e-a2a9-cf4cd19571e6.png" width="350" height="350">  
-</p>
+Examples of modifying point cloud of 'airplane' are shown below: 
+One-quarter / Half /Three-quarters of the point cloud is removed: 
+
+<div align=center>
+ 
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/a2596e6f-cee8-4ff0-a300-6f048bf68a2c)
+
+</div>
 
 # Network Architecture
 Set Abstraction --> BottleNeck Residual / Inverted Residual MLP --> MaxPooling 
 
 Traditional Residual Blk:
 
+<div align=center>
+
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/cd55b506-8bc3-41b8-9b08-8b9110a0879e)
 
+</div>
 
 Our Residual Blk that was inserted into PointNet++:
 
+<div align=center>
+ 
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/a6136012-100c-40cc-8d37-05a3de9045e7)
+
+</div>
 
 # Results
 Our model is trained with manipulated datasets from ModelNet40 (quarter, half, and three-quarters removed)
@@ -161,31 +173,46 @@ The training and testing accuracy is shown below:
 
 Half removed:
 
+<div align=center>
+
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/0c82a6e5-e278-418d-bdf4-02e2eea87417)
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/2c95e774-c0e6-4f57-ab02-66be56ab681a)
 
+</div>
+
 Quarter removed:
 
+<div align=center>
+ 
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/f9b4ef3a-684e-4568-9809-bd90b9bc2465)
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/fd94d84e-27f6-4572-8b06-78527c58e121)
 
+</div>
+
 Three-quarters removed:
 
+<div align=center>
+ 
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/ec1a235b-0d19-4709-bfb1-ba18465092f8)
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/4b64de1b-6049-485d-bc60-0321aaa9632b)
 
+</div>
 
 Validation accuracy is below:
 
+<div align=center>
+ 
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/7391b67e-60c0-4f3e-846a-b56f627cbf81)
+
+</div>
 
 With a simple MLP module inserted, our model only uses around 0.8 million more parameters than original PointNet++
 
-<p align="center">
+<div align=center>
  
 ![image](https://github.com/yukaiw23/pointnet/assets/114976583/5e5aa51e-ef9c-437a-9566-63e79eac3544)
 
-</p>
+</div>
 
 
 
