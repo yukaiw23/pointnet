@@ -144,3 +144,48 @@ One quarter / Half /Three-quarters of the point cloud is removed:
 
 # Network Architecture
 Set Abstraction --> BottleNeck Residual / Inverted Residual MLP --> MaxPooling 
+
+Traditional Residual Blk:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/cd55b506-8bc3-41b8-9b08-8b9110a0879e)
+
+
+Our Residual Blk that was inserted into PointNet++:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/a6136012-100c-40cc-8d37-05a3de9045e7)
+
+# Results
+Our model is trained with manipulated datasets from ModelNet40 (quarter, half, and three-quarters removed)
+
+The training and testing accuracy is shown below: 
+
+Half removed:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/0c82a6e5-e278-418d-bdf4-02e2eea87417)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/2c95e774-c0e6-4f57-ab02-66be56ab681a)
+
+Quarter removed:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/f9b4ef3a-684e-4568-9809-bd90b9bc2465)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/fd94d84e-27f6-4572-8b06-78527c58e121)
+
+Three-quarters removed:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/ec1a235b-0d19-4709-bfb1-ba18465092f8)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/4b64de1b-6049-485d-bc60-0321aaa9632b)
+
+
+Validation accuracy is below:
+
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/7391b67e-60c0-4f3e-846a-b56f627cbf81)
+
+With a simple MLP module inserted, our model only uses around 0.8 million more parameters than original PointNet++
+
+<p align="center">
+ 
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/5e5aa51e-ef9c-437a-9566-63e79eac3544)
+
+</p>
+
+
+
