@@ -1,6 +1,7 @@
-# Pointnet
-Pointnet(++) by pytoch in Python
-## 05/07/2023
+
+## Exploiting application of missing point clouds on the classification using PointNet-like architecture
+
+This repo works as a guide and record of the above topic. 
 
 ### 05/07/2023: 
 
@@ -74,7 +75,9 @@ python test_classification.py --use_normal --log_dir pointnet2_cls_msg
 
 The testing log and result will be saved under '/log' folder
 
-03/05/2023
+05/03/2023
+
+The ModelNet40 has been removed quarter, half and three quarters of it, with respect to offset world coordinate of points cloud.
 
 The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy = 90.3871%, Class accuracy = 88.1154%
 
@@ -82,13 +85,13 @@ The testing demonstration is as below:
 
  
 
-![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png) width="150" height="150"
+![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png)
 
-
+However, the method we used to manipulate datasets is based on the default world coordinate of the ModelNet40, which cause uneven removal. For example, sometimes we want to remove half of the points cloud, but more than / fewer portion is removed. Then we decided to pursue the way introduced below  'Data Manipulation'
 
 15/05/2023
 
-The data has been updated since 12/04/2023, as the new manipulated dataset is used to trained original PoinNet++ model.
+The data has been updated since 12/04/2023, as the new manipulated dataset is used to train the original PoinNet++ model.
 
 The new testing result is as follows: 
 | Data | Train Instance Accuracy | Test Accuracy |
@@ -98,7 +101,7 @@ The new testing result is as follows:
 | Three Quarters | 95.5589 | 86.7185 |
 
 The validation result is shown below: 
-| Data | Test Instance Accuracy 
+| Data | Validation Accuracy| 
 |-----| -------- |
 | Half | 86.7 | 
 | Quarter | 88.97 | 
