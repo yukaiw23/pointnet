@@ -1,0 +1,6 @@
+2023-07-15 15:22:12,266 - Model - INFO - PARAMETER ...
+2023-07-15 15:22:12,266 - Model - INFO - Namespace(batch_size=8, gpu='1', log_dir='pointnet2_cls_msg', num_category=40, num_point=1024, num_votes=3, use_cpu=False, use_normals=False, use_uniform_sample=False)
+2023-07-15 15:22:12,266 - Model - INFO - Load dataset ...
+2023-07-15 15:25:06,250 - Model - INFO - Test Instance Accuracy: 0.197847, Class Accuracy: nan
+
+ori model, half, validation
