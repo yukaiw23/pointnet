@@ -61,11 +61,6 @@ The training log and result will be saved under '/log' folder
 
 # Testing
 
-Official record:
-
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/e87aa765-7b0b-45eb-8191-31a413672620)
-
-
 Run the following for object classification task:
 ```
 python test_classification.py --use_normal --log_dir pointnet2_cls_msg
@@ -83,9 +78,9 @@ The model has been trained based on new dataset 'modelnet40_0228', and its test 
 
 The testing demonstration is as below:
 
- 
-
-![截图 2023-03-09 00-35-52](https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png)
+<div align=center>
+<img src="https://user-images.githubusercontent.com/114976583/223773410-cce74421-cd36-46f2-8b33-a85f1d3c8644.png" width="800" height="400">
+</div>
 
 However, the method we used to manipulate datasets is based on the default world coordinate of the ModelNet40, which cause uneven removal. For example, sometimes we want to remove half of the points cloud, but more than / fewer portion is removed. Then we decided to pursue the way introduced below  'Data Manipulation'
 
@@ -141,12 +136,13 @@ The calculation of the center of mass of point cloud is based on the following e
  
 where xi, yi, zi are three coordinates of each point within the point cloud, and M, n are a total number of points within the point cloud
 
-Examples of modifying point cloud of 'airplane' are shown below: 
+Examples of a modifying point cloud of 'airplane' are shown below: 
 One-quarter / Half /Three-quarters of the point cloud is removed: 
 
 <div align=center>
  
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/a2596e6f-cee8-4ff0-a300-6f048bf68a2c)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/7c9f4b08-79eb-4686-8313-d7b5d203f375)
+
 
 </div>
 
@@ -154,66 +150,52 @@ One-quarter / Half /Three-quarters of the point cloud is removed:
 Set Abstraction --> BottleNeck Residual / Inverted Residual MLP --> MaxPooling 
 
 Traditional Residual Blk:
-
 <div align=center>
-
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/cd55b506-8bc3-41b8-9b08-8b9110a0879e)
-
+<img src="https://github.com/yukaiw23/pointnet/assets/114976583/710fc015-785a-4a69-bf76-4234f0625da6.jpg" width="400" height="300">
 </div>
 
 Our Residual Blk that was inserted into PointNet++:
 
 <div align=center>
  
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/a6136012-100c-40cc-8d37-05a3de9045e7)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/6d306fd9-bf93-4188-b97d-3eaa509c05b4)
 
 </div>
 
 # Results
 Our model is trained with manipulated datasets from ModelNet40 (quarter, half, and three-quarters removed)
 
-The training and testing accuracy is shown below: 
-
-Half removed:
+The training accuracy is shown below: 
 
 <div align=center>
 
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/0c82a6e5-e278-418d-bdf4-02e2eea87417)
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/2c95e774-c0e6-4f57-ab02-66be56ab681a)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/5c341b45-8b6d-4271-a4a6-aa959626019a|width=100)
 
 </div>
 
-Quarter removed:
+The testing accuracy is as follows:
 
 <div align=center>
  
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/f9b4ef3a-684e-4568-9809-bd90b9bc2465)
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/fd94d84e-27f6-4572-8b06-78527c58e121)
+![image](https://github.com/yukaiw23/pointnet/assets/114976583/bb85b166-95f3-43b1-99ce-8d221dc54568)
 
 </div>
 
-Three-quarters removed:
-
-<div align=center>
- 
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/ec1a235b-0d19-4709-bfb1-ba18465092f8)
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/4b64de1b-6049-485d-bc60-0321aaa9632b)
-
-</div>
 
 Validation accuracy is below:
 
 <div align=center>
  
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/7391b67e-60c0-4f3e-846a-b56f627cbf81)
-
+<img src="https://github.com/yukaiw23/pointnet/assets/114976583/1dc88bd3-a4de-40bd-b67f-c12dd99a237e.jpg" width="400" height="300">
 </div>
 
-With a simple MLP module inserted, our model only uses around 0.8 million more parameters than original PointNet++
+With a simple MLP module inserted, our model only uses around 0.8 million more parameters than the original PointNet++, and 1.2 million parameters less than PointNet
+
+The validation accuracy of new datasets on original PoineNet++ and retrained PointNet++ is shown:
 
 <div align=center>
- 
-![image](https://github.com/yukaiw23/pointnet/assets/114976583/5e5aa51e-ef9c-437a-9566-63e79eac3544)
+
+<img src="https://github.com/yukaiw23/pointnet/assets/114976583/b9301abf-e3c6-49e5-8384-7fbb44541377.jpg" width="400" height="300"> 
 
 </div>
 
