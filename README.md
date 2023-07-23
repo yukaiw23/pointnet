@@ -63,7 +63,7 @@ The training log and result will be saved under '/log' folder
 
 Run the following for object classification task:
 ```
-python test_classification.py --use_normal --log_dir pointnet2_cls_msg
+python test_classification.py --log_dir pointnet2_cls_msg
 ``` 
  
 
