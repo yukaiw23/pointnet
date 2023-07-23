@@ -74,8 +74,6 @@ The testing log and result will be saved under '/log' folder
 
 The ModelNet40 has been removed quarter, half and three quarters of it, with respect to offset world coordinate of points cloud.
 
-The model has been trained based on new dataset 'modelnet40_0228', and its test result are: Test Instance Accuracy = 90.3871%, Class accuracy = 88.1154%
-
 The testing demonstration is as below:
 
 <div align=center>
@@ -84,17 +82,8 @@ The testing demonstration is as below:
 
 However, the method we used to manipulate datasets is based on the default world coordinate of the ModelNet40, which cause uneven removal. For example, sometimes we want to remove half of the points cloud, but more than / fewer portion is removed. Then we decided to pursue the way introduced below  'Data Manipulation'
 
-15/05/2023
 
-The data has been updated since 12/04/2023, as the new manipulated dataset is used to train the original PoinNet++ model.
-
-The new testing result is as follows: 
-| Data | Train Instance Accuracy | Test Accuracy |
-|-----| -------- | -------|
-| Half | 94.8943 | 88.1758 | 
-| Quarter | 95.4776 | 88.9748 |
-| Three Quarters | 95.5589 | 86.7185 |
-
+12/04/2023L The data has been updated as the new manipulated dataset is used to train the original PoinNet++ model.
 The validation result is shown below: 
 | Data | Validation Accuracy| 
 |-----| -------- |
@@ -103,8 +92,7 @@ The validation result is shown below:
 | Three Quarters | 86.39 | 
 
 
-30/06/2023
-With new residual MLP added to the network, the training result is as follows: 
+30/06/2023: With new residual MLP added to the network, the training result is as follows: 
 | Data | Train Instance Accuracy | Test Accuracy |
 |-----| -------- | -------|
 | Half | 92.937 | 89.0726 | 
