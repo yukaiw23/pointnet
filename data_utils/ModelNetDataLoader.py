@@ -65,9 +65,12 @@ class ModelNetDataLoader(Dataset):
         if self.num_category == 10:
             shape_ids['train'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet10_train.txt'))]
             shape_ids['test'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet10_test.txt'))]
+       
+        
         else:
             shape_ids['train'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet40_train.txt'))]
             shape_ids['test'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet40_testsample.txt'))]
+            #shape_ids['vali'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet40_testsample2.txt'))]
             # print(shape_ids['test'])
         assert (split == 'train' or split == 'test')
         shape_names = ['_'.join(x.split('_')[0:-1]) for x in shape_ids[split]]
