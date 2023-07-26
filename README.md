@@ -83,7 +83,7 @@ The testing demonstration is as below:
 However, the method we used to manipulate datasets is based on the default world coordinate of the ModelNet40, which cause uneven removal. For example, sometimes we want to remove half of the points cloud, but more than / fewer portion is removed. Then we decided to pursue the way introduced below  'Data Manipulation'
 
 
-12/04/2023L The data has been updated as the new manipulated dataset is used to train the original PoinNet++ model.
+12/04/2023: The data has been updated as the new manipulated dataset is used to train the original PoinNet++ model.
 The validation result is shown below: 
 | Data | Validation Accuracy| 
 |-----| -------- |
